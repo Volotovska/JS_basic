@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>
+    <title>Работа с узлами DOM - методы и свойства -2</title>
+<!-- 
+    createElement - создания элементов
+-->
+</head>
+<body>
+<div id ="div"></div>
+<button onclick="game()">test</button>
+</body>
+  <script>
+ 
+        var newDiv = document.createElement('div');
+        newDiv.innerHTML = 'Hello world!';
+        document.body.appendChild(newDiv);
+
+        function game(){
+        	var span = document.createElement('span');
+        	var div = document.getElementById('div');
+        	span.innerHTML = 'some text';
+        	div.appendChild(span)
+        }
+
+    </script>
+</html>

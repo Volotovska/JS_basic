@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		var array = [1, 'month', 67, 90];
+		document.write('Исходный массив - ' + array + '<br/><br/>');
+
+		var array_joined = array.join(' '); // method join
+		document.write('Используем метод join - ' + array_joined + '<br/><br/>');
+
+		var new_array = [4, 7, 10, 'day'];
+		var array_concated = array.concat(new_array); //method concat
+		document.write('Используем метод concat - ' + array_concated + '<br/><br/>');
+
+		var array_reversed = array.reverse(); // method reverse
+		document.write('Используем метод reverse - ' + array_reversed + '<br/><br/>');
+
+		var array_sliced = array.slice(1,4); // method slice
+		document.write('Используем метод slice - ' + array_sliced + '<br/><br/>');
+
+		array.splice(0, 0, 5,8,"year"); //method splice
+		document.write('Используем метод splice - ' + array + '<br/><br/>');
+
+		array.sort(); //method sort
+		document.write('Используем метод sort - ' + array + '<br/><br/>');
+
+		array.push(); //mehod push
+		document.write('Используем метод push - ' + array + '<br/><br/>');
+
+		array.pop(); //method pop
+		document.write('Используем метод pop - ' + array + '<br/><br/>');
+
+		array.unshift('decade'); //method unshift
+		document.write('Используем метод unshift - ' + array + '<br/><br/>');
+
+		var deleted = array.shift(); //method shift
+		document.write('Используем метод shift - ' + array + '<br/><br/>');
+		document.write('Удаленное значение методом shift - ' + deleted + '<br/><br/>');
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

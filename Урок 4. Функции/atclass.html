@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		do{
+			var num1=+prompt('Enter 1 value');
+		}while(isNaN(num1));
+
+		do{
+			var num2=+prompt('Enter 2 value');
+		}while(isNaN(num2));
+
+		do{
+			 var znak=prompt('Enter sign');
+		}while(znak != '+' && znak != '-' && znak != '*' && znak != '/')
+
+		
+		function calc(a,b,sign) {
+			if(sign == '+') {
+				result=a+b;
+			}
+			else if(sign == '-') {
+				result=a-b;
+			}
+			else if(sign == '*') {
+				result=a*b;
+			}
+			else if(sign == '/') {
+				result=a/b;
+			}
+			
+			return result
+		}
+		var res = calc(num1,num2,znak);
+		document.write(res)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

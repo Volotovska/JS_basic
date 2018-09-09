@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		var calculator = new Object;
+
+		calculator.GetCalc = function(){
+		calculator.number1 = +prompt('Enter number1');
+		calculator.number2 = +prompt('Enter Ynumber2');
+		calculator.sign = prompt('Enter sign');
+		if(this.sign == '+'){
+			var res = calculator.number1 + calculator.number2;
+			console.log(res);
+		}
+		else if(this.sign == '-'){
+			var res = calculator.number1 - calculator.number2;
+			console.log(res);
+			}	
+		else if(this.sign == '*'){
+			var res = calculator.number1 * calculator.number2;
+			console.log(res);
+			}	
+		else if(this.sign == '/'){
+			var res = calculator.number1 / calculator.number2;
+			console.log(res);
+			}
+		else {
+			document.write('Error')
+		}		
+		}
+
+		 calculator.GetCalc();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

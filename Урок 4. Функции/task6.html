@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var array = [];
+		var res = 0;
+
+		function calcLength(a){
+			if(isNaN(a)) {
+				var result = 'Not a number';
+			} else if(a ==' ' || a == '') {
+				result = "Error";
+			} else if(a == null) {
+				result = 'Cancel'
+			} else {
+				array.push(a);
+				result = array.length;
+			}
+			
+			return result;
+		}
+
+		do {
+            var argument=+prompt('Enter argument');
+            res = calcLength(argument);
+        } while(argument);
+
+		document.write(res);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

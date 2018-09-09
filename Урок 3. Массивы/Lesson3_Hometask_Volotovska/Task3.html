@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<script type="text/javascript">
+	var array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+	var limit = prompt('Enter number for array from 1 till 15');
+	if (limit == null) {
+        document.write('Cancel');
+        	}
+	else if (limit == '') {
+        document.write('Value is empty');
+        	}
+    else if (isNaN(limit)) {
+	    document.write('Value is not number');
+	        }
+	else if(limit>15) {
+        document.write('Value is more 15');
+        	}
+    else if(limit<0) {
+        document.write('Value is less 15');
+        	}
+    else {
+		for(var i = 0; i < array.length; i++) {
+			document.write(array[i]);
+			if (i == limit) {
+			break;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

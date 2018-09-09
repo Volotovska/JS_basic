@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script type="text/javascript">
+
+		var arr = [1,true,'str',{},[],1];
+
+		var number = [];
+		var string = [];
+		var boolean = [];
+		var other = [];
+
+		for(i=0;i<arr.lenght;i++){
+
+			if(typeof arr[i] == 'number') {
+				number.push(arr[i]);
+				console.log(number)
+			}
+			else if(typeof arr[i] == 'string') {
+				string.push(arr[i]);
+				console.log(string)
+			}
+
+			else if(typeof arr[i] == 'boolean') {
+				boolean.push(arr[i]);
+				console.log(boolean)
+			}
+			else {
+				other.push(arr[i]);
+				console.log(other)
+			}
+		}
+
+	</script>
+
+	
+</head>
+<body>
+	
+</body>
+</html>

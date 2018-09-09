@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		function showSum(){
+			var res = 0;
+			for (var i = 0; i < arguments.length; i++){
+				res += arguments[i]
+			}
+			return res;
+		}
+		
+		document.write(showSum(1,2,3,4,5,6,7))
+
+	</script>
+</head>
+<body>
+	<div style="display: flex; flex-direction: column; margin: auto;">
+	 <div style="width: 200px;height: 200px;background: black;border:0px solid white;margin: auto;display: flex;align-items: center;">
+	   <div style="height: 150px;width: 150px;background-color: grey;border-radius: 50%; margin: auto; " class="circle"></div>
+	 </div>
+	  <div style="width: 200px;height: 200px;background: black;border:0px solid white;margin: auto;display: flex;align-items: center;">
+	   <div style="height: 150px;width: 150px;background-color: grey;border-radius: 50%; margin: auto; " class="circle"></div>
+	 </div>
+	  <div style="width: 200px;height: 200px;background: black;border:0px solid white;margin: auto;display: flex;align-items: center;">
+	   <div style="height: 150px;width: 150px;background-color: grey;border-radius: 50%; margin: auto; " class="circle"></div>
+	 </div>
+	 <div style="width: 25px; height: 500px;background: grey; margin: auto; display: flex; align-items: center;">
+	  <div style="width: 20px;height: 20px;background: red;margin:auto;border-radius: 50%;" id="button"></div>
+	 </div>
+	</div>
+	<script type="text/javascript">
+		var button = document.getElementById('button');
+		var circle = document.getElementsByClassName('circle');
+		button.onclick=	function myFunction() {
+	  setInterval(function(){
+	   setTimeout(function(){circle[0].style.background='red';
+	    circle[1].style.background='grey';
+	    circle[2].style.background='grey';}, 3000);
+	   setTimeout(function(){circle[1].style.background='yellow';
+	    circle[0].style.background='grey';
+	    circle[2].style.background='grey';}, 6000);
+	   setTimeout(function(){circle[2].style.background='green';
+	    circle[0].style.background='grey';
+	    circle[1].style.background='grey';
+	   }, 9000);
+	  }, 9000);
+	 }
+	</script>
+</body>
+</html>

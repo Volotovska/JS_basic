@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		function showSum(){
+			var res = 0;
+			for (var i = 0; i < arguments.length; i++){
+				res += arguments[i]
+			}
+			return res;
+		}
+		
+		document.write(showSum(1,2,3,4,5,6,7))
+
+	</script>
+</head>
+<body>
+	<div style="display: flex; flex-direction: column; margin: auto;">
+	 <div style="width: 200px;height: 200px;background: black;border:0px solid white;margin: auto;display: flex;align-items: center;">
+	   <div style="height: 150px;width: 150px;background-color: grey;border-radius: 50%; margin: auto; " class="circle"></div>
+	 </div>
+	  <div style="width: 200px;height: 200px;background: black;border:0px solid white;margin: auto;display: flex;align-items: center;">
+	   <div style="height: 150px;width: 150px;background-color: grey;border-radius: 50%; margin: auto; " class="circle"></div>
+	 </div>
+	  <div style="width: 200px;height: 200px;background: black;border:0px solid white;margin: auto;display: flex;align-items: center;">
+	   <div style="height: 150px;width: 150px;background-color: grey;border-radius: 50%; margin: auto; " class="circle"></div>
+	 </div>
+	 <div style="width: 25px; height: 500px;background: grey; margin: auto; display: flex; align-items: center;">
+	  <div style="width: 20px;height: 20px;background: red;margin:auto;border-radius: 50%;" id="button"></div>
+	 </div>
+	</div>
+	<script type="text/javascript">
+		var circle = document.getElementsByClassName('circle');
+		circle[0].onclick=function(){
+			this.style.background = 'red'
+			circle[1].style.background = 'grey'
+			circle[2].style.background = 'grey'
+		}
+		circle[1].onclick=function(){
+			this.style.background = 'yellow'
+			circle[0].style.background = 'grey'
+			circle[2].style.background = 'grey'
+		}
+		circle[2].onclick=function(){
+			this.style.background = 'green'
+			circle[1].style.background = 'grey'
+			circle[0].style.background = 'grey'
+		}
+	</script>
+</body>
+</html>

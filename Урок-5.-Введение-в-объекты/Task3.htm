@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+    <title>Обьекты</title>
+
+    <script type="text/javascript">
+
+        var employee = new Object();
+
+        employee.name =prompt('Enter your name');
+
+        employee.sName =prompt('Enter your SName');
+
+        employee.age =prompt('Enter your age');
+
+        employee.occupation =prompt('Enter your occupation');
+
+        employee.show_characteristics = function () {
+            console.log('Name: ' + this.name + '\n');
+            console.log('SName: ' + this.sName + '\n');
+            console.log('Age: ' + this.age + '\n');
+            console.log('Occupation: ' + this.occupation + '\n');
+        };
+
+        employee.show_characteristics();
+
+    </script>
+
+</head>
+<body>
+
+    <!-- Разметка страници -->
+
+</body>
+</html>

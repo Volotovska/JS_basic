@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.header{
+		background: red;
+		text-align: center;
+		height: 80px;
+	}
+	.input{
+		width: 25%;
+	}
+	.button{
+		width: 10%;
+	}
+	li{
+		width: 100%;
+	}
+	li:nth-child(odd){
+		background: green;
+	}
+	li{
+		background: indigo;
+		height: 30px;
+		line-height: 30px;
+		color: white;
+		padding: 15px;
+		position: relative;
+	}
+	ul{
+		list-style-type: none;
+	}
+	li:hover{
+		background: yellow;
+		transition:1s;
+	}
+	span{
+		position: absolute;
+		right: 0;
+		color: white;
+		cursor: pointer;
+		padding-right:10px;
+	}
+	.checked{
+		text-decoration: line-through;
+
+	}
+</style>
+	<title></title>
+</head>
+<body>
+<!-- 1.делаем шапку списка с инпутом и кнопкой;
+2.делаем список со списком дел;
+3.берем все li, перебираем циклом;
+4.в цикле создаем спан;
+5.в спан записываем крестик;
+6.к каждому элементу списка добавляем span;
+7.вешаем на клик по каждому элементу списка класс лист чекд;
+8.берем все спаны на странице;
+и перебираем их циклом
+9.при клике на спан ставим родителю(li) display -none
+10.Берем кнопку со страници;
+11.При нажатии на кнопку вешаем функцию(New Item)
+12.в функции берем инпут
+13. создаем li
+14.записываем в инпут value инпута;
+15. берем список со страници и добавляем к нему li;
+16. Добавляем в функцию код, который писали выше
+ -->
+</body>
+</html>

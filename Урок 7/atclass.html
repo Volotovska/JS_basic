@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	background: red;
+	text-align: center;
+}
+#input{
+	width: 25%;
+	margin: 20px;
+}
+#button{
+	width: 100px;
+	height: 30px;
+}
+#myUl{
+	list-style-type: none;
+}
+li{
+	width: 90%;
+	background: indigo;
+	padding: 25px;
+	transition: 1s;
+	position: relative;
+}
+li:nth-child(odd){
+	background: green;
+}
+li:hover{
+	background: yellow;
+}
+span{
+	position: absolute;
+	right: 0;
+	padding-right: 30px;
+	cursor: pointer;
+}
+.checked{
+	text-decoration: line-through;
+}
+</style>
+	<title></title>
+</head>
+<body>
+
+<div class="header">
+	<h1>My To Do List</h1>
+	<input type="text" id="input" placeholder="add the deal">
+	<button id="button"> add deal </button>
+</div>	
+<ul id="myUl">
+	<li>Some text</li>
+	<li>Some text</li>
+	<li>Some text</li>
+	<li>Some text</li>
+	<li>Some text</li>
+</ul>
+<script>
+
+	var li=document.getElementsByTagName('li');
+	  for(i=0;i<li.length;i++){
+	   var span=document.createElement('span');
+	   span.innerHTML='&times;';
+	   li[i].appendChild(span);
+	   li[i].onclick=function(){
+	    this.classList.toggle('checked');
+	   }
+	  }
+var span =document.getElementsByTagName('span');
+for(j=0;j<span.length;j++){
+	span[j].onclick=function(){
+		this.parentElement.style.display='none'
+	}
+}
+var button = document.getElementById('button');
+button.onclick=function(){
+	var input = document.getElementById('input');
+	var li = document.createElement('li');
+	li.innerHTML = input.value;
+	var ul = document.getElementById('myUl');
+	ul.appendChild(li);
+	input.value=''
+
+	var li=document.getElementsByTagName('li');
+	  for(i=0;i<li.length;i++){
+	   var span=document.createElement('span');
+	   span.innerHTML='&times;';
+	   li[i].appendChild(span);
+	   li[i].onclick=function(){
+	    this.classList.toggle('checked');
+	   }
+	  }
+var span =document.getElementsByTagName('span');
+for(j=0;j<span.length;j++){
+	span[j].onclick=function(){
+		this.parentElement.style.display='none'
+	}
+}
+}
+
+</script>
+<!-- 1.делаем шапку списка с инпутом и кнопкой;
+2.делаем список со списком дел;
+3.берем все li, перебираем циклом;
+4.в цикле создаем спан;
+5.в спан записываем крестик;
+6.к каждому элементу списка добавляем span;
+7.вешаем на клик по каждому элементу списка класс лист чекд;(classList.toggle(''))
+8.берем все спаны на странице;
+и перебираем их циклом
+9.при клике на спан ставим родителю(li) (parentElement) display -none
+10.Берем кнопку со страници;
+11.При нажатии на кнопку вешаем функцию(New Item)
+12.в функции берем инпут
+13. создаем li
+14.записываем в инпут value инпута;
+15. берем список со страници и добавляем к нему li;
+16. Добавляем в функцию код, который писали выше
+ -->
+</body>
+</html>

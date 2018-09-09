@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		var point = new Object;
+
+		point.GetQuadrant = function(){
+		point.x = +prompt('Enter X');
+		point.y = +prompt('Enter Y');
+		if(this.x>0 && this.y>0){
+			document.write('You are in 1 Quadrant')
+			}
+		else if(this.x>0 && this.y<0){
+			document.write('You are in 2 Quadrant')
+			}	
+		else if(this.x<0 && this.y>0){
+			document.write('You are in 3 Quadrant')
+			}	
+		else if(this.x<0 && this.y<0){
+			document.write('You are in 4 Quadrant')
+			}
+		else if(this.x==0 && this.y==0){
+			document.write('x=0 and y=0')
+			}
+		else {
+			document.write('Error')
+		}		
+		}
+
+		point.GetQuadrant();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

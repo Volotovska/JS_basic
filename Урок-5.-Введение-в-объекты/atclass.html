@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		var point = new Object();
+
+		point.x = prompt('Введите X');
+		point.y = prompt('Введите Y');
+
+		point.show_coords = function () {
+		if(point.x >0 && point.y >0){
+			console.log('1 ось кординат')
+		}
+
+		else if(point.x >0 && point.y <0){
+			console.log('2 ось кординат')
+		}
+
+		else if(point.x <0 && point.y >0){
+			console.log('3 ось кординат')
+		}
+
+		else if(point.x <0 && point.y <0){
+			console.log('4 ось кординат')
+		}
+		else {
+			console.log('Error')
+		}
+		}
+
+	    point.show_coords();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

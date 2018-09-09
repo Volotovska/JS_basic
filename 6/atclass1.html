@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var tr = +prompt('Введите количество строк');
+		var td = +prompt('Введите количество ячеек');
+		function showTable(color,tr,td,text){
+			document.write('<table border ="1" style= color:'+color+ '>')
+
+			for(i=0; i<tr;i++){
+				document.write('<tr>')
+				for(j=0;j<td;j++){
+					document.write('<td>' + text+'</td>')
+				}
+				document.write('</tr>')
+			}
+			document.write('</table>')
+		}
+
+		var color = 'rgb('+Math.round(Math.random()*256)+','+Math.round(Math.random()*256)+','+Math.round(Math.random()*256)+')';
+		showTable(color,tr,td,'sdf');
+
+	</script>
+
+</body>
+</html>

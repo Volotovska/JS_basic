@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<script type="text/javascript">
+        var ukraine = ["Киев", "Харьков", "Львов", "Днепропетровск"];
+        var index = Math.floor(Math.random()*ukraine.length);
+        var arr = [];
+        var world = ukraine[index];
+        var count = world.length;
+        for(i=0;i<world.length;i++){
+        	arr[i]='_' // to add method push
+        }
+        do{
+        	alert('Введите слово:' + arr.join(' ') + 'Вам осталось угадать ' + count + ' букв')
+        	var question = confirm('Будете играть?');
+        	var letter = prompt('Введите букву');
+        	if(letter === null) {
+        		break;
+        	}
+        	else if (isNaN(letter)) {
+        		break;
+        	}
+        	else if(letter.length>1) {
+        		break;
+        	}
+        } while(question)
+	</script>
+</head>
+<body>
+
+</body>
+</html>

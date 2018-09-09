@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name = prompt('Enter your name');
+		var sName = prompt('Enter your second name');
+		var age = +prompt('Enter your age');
+		document.write('Your name is: ' + name + '<br> Your second name is:' + sName + '<br>Your age is' + age);
+
+		var a = 10;
+		var b = 15;
+		var c;
+		c=b;
+		b=a;
+		a=c;
+		document.write(a+'<br>');
+		document.write(b);
+
+		var login = '0000';
+		var pasword = '1111';
+		var question = prompt('Enter your login');
+		var sQuestion = prompt('Enter your pasword');
+		if(question==login&&pasword==sQuestion){
+			document.write('hello admin')
+		}
+		else document.write('hello user');
+
+		document.write('<table border ="1"><tr><td> Логин:'+
+			login+'</td><td> Пароль:'+pasword+'</td></tr></table>');
+
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	div{
+		border:1px solid black;
+		width:200px;
+		height:200px;
+		display:inline-block;	
+}
+</style>
+
+</head>
+<body>
+	<div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+<script>
+   var div=document.getElementsByTagName('div');
+   for(i=0;i<div.length;i++){
+    div[i].onclick=function(){
+     this.style.background='red';
+    }
+   }
+   document.write(div.length)
+</script>
+</body>
+</html>
